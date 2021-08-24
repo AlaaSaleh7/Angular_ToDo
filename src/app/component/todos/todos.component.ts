@@ -10,26 +10,6 @@ export class TodosComponent implements OnInit {
   constructor() {}
 // Lifecycle Angular
   ngOnInit(): void {
-    this.todos = [
-      {
-        // id: 1,
-        text: 'Study',
-        // day: 'sunday 8:00 pm',
-        completed: true,
-      },
-      {
-        // id: 2,
-        text: 'Codding',
-        // day: 'monday 1:30 pm',
-        completed: true,
-      },
-      {
-        // id: 3,
-        text: 'Eat',
-        // day: '',
-        completed: false,
-      },
-    ];
   }
   deleteTodo(id: number) {
     this.todos = this.todos.filter((ele, i) => i !== id);

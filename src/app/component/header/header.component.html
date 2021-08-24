@@ -1,6 +1,7 @@
 <div class = "header">
  <h1>{{title}}</h1>
  <!-- ngModel will bind the input value with the email attribute -->
- <input type="text" placeholder="Enter Your ToDo.."/>
- <button >Add</button>
+ <input type="text" [(ngModel)]="inputTodo"
+ placeholder="Enter Your ToDo.."/>
+ <button (click)="addTodo()">Add</button>
 </div>

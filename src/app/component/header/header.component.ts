@@ -8,15 +8,16 @@ import { Todo, Todos } from './../../Todo';
 export class HeaderComponent implements OnInit {
   todos:Todo[] = Todos;
   title : string = "ToDo List";
-  // inputTodo :string="";
+  inputTodo :string="";
   constructor() { }
 
   ngOnInit(): void {
   }
-  // addTodo(){
-  // this.todos.push({
-  //   text : this.inputTodo,
-  //   completed: false
-  // })
-  // }
+  addTodo(){
+  this.todos.push({
+    text : this.inputTodo,
+    completed: false
+  })
+  this.inputTodo=""
+  }
 }
