@@ -1,11 +1,11 @@
-<div class="todos">
+<div class="container">
   <!-- *ngFor just in the div! -->
-  <div *ngFor="let todo of todos, let i =index">
+  <div  class="navbar navbar-expand-lg navbar-light bg-light" *ngFor="let todo of todos, let i =index">
     <h3>
       {{i}}
       {{ todo.text }}
     </h3>
     <!-- <p *ngIf="todo.day">The Time: {{ todo.day }}</p> -->
-    <button (click)="deleteTodo(i)">Delete</button>
+    <button class="btn btn-danger"(click)="deleteTodo(i)">Delete</button>
   </div>
 </div>
