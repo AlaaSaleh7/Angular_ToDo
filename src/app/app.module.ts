@@ -8,6 +8,7 @@ import { HeaderComponent } from './component/header/header.component';
 // import FormsModule to be able to use the ngModel directive
 import { FormsModule } from "@angular/forms";
 
+
 @NgModule({
   declarations: [
     AppComponent,
